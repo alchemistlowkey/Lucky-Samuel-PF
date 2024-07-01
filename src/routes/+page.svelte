@@ -14,8 +14,8 @@
 			<div>
 				<h1>Hi, I'm Lucky Samuel a Software Engineer (Back-end)</h1>
 			</div>
-			<div class="col">
-				<p>
+			<div class="col w-100">
+				<p class="text-wrap w-200 text-black">
 					I am a backend developer with expertise in Python, ExpressJS and Node.js. I have
 					experience working with frameworks like Django and Sveltekit. I enjoy solving complex
 					problems and learning new skills, looking forward to new challenges and opportunities to
@@ -23,13 +23,13 @@
 				</p>
 			</div>
 		</div>
-		<div class="row mt-4">
+		<div class="row mt-4 text-black w-2">
 			<div class="col bg-primary rounded p-4 m-2">
 				<p>Click the icon below to connect to my LinkedIn profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
 						<a
-							class="page-link bg-primary text-white"
+							class="page-link bg-primary link-warning text-white"
 							href="https://www.linkedin.com/in/lucky-samuel/"
 							target="_blank"
 						>
@@ -43,7 +43,7 @@
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
 						<a
-							class="page-link bg-success text-white"
+							class="page-link bg-success link-danger text-white"
 							href="https://x.com/alchemistlowkey"
 							target="_blank"
 						>
@@ -57,7 +57,7 @@
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
 						<a
-							class="page-link bg-secondary text-white"
+							class="page-link bg-secondary link-info text-white"
 							href="https://github.com/alchemistlowkey"
 							target="_blank"
 						>
@@ -67,5 +67,32 @@
 				</ul>
 			</div>
 		</div>
+		<div class="row">
+			<h4>LinkedIn Certificates:</h4>
+			<div class="col mt-2">
+				<a href="/" class="disabled-link"
+					><img src="/ALX-cert.png" class="img-fluid d-inline-block rounded" alt="site logo" /></a
+				>
+			</div>
+			<div class="col mt-2">
+				<a href="/" class="disabled-link"
+					><img src="/cert.png" class="img-fluid d-inline-block rounded" alt="site logo" /></a
+				>
+			</div>
+			<div class="col mt-2">
+				<a href="/" class="disabled-link"
+					><img src="/English1.png" class="img-fluid d-inline-block rounded" alt="site logo" /></a
+				>
+			</div>
+		</div>
 	</div>
 </section>
+
+<style>
+	.disabled-link {
+		pointer-events: none;
+		cursor: default;
+		color: gray;
+		text-decoration: none;
+	}
+</style>
