@@ -16,7 +16,7 @@ When submitting, ensure you have a stage tag set and your profile picture.
 - Publish your blog post on any medium of your choice
 
 ### Solution (Task Done)
-[Stage Zero - Technical Blog Article](https://medium.com/@alchemistlowkey/a-day-in-the-life-of-a-backend-software-engineer-60b4e0e01f25)
+- [Stage Zero - Technical Blog Article](https://medium.com/@alchemistlowkey/a-day-in-the-life-of-a-backend-software-engineer-60b4e0e01f25)
 
 ## Stage One Task - Backend Track
 ###Task Description
@@ -35,4 +35,4 @@ Response:
 Host your API using any free hosting service. PLEASE AVOID render.com !!!.
 
 ### Solution (Task Done)
-[Stage One- API End Point](https://hng-henna.vercel.app/api/hello?visitor_name=Mark)
+- [Stage One- API End Point](https://hng-henna.vercel.app/api/hello?visitor_name=Mark)
