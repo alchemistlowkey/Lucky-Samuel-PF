@@ -40,7 +40,7 @@
 
 		<div class="row">
 			<div class="col">
-				<a href="/" class="disabled-link"
+				<a href="https://fuelpricelocator.vercel.app/" class=""
 					><img src="/FuelPrice.png" class="img-fluid d-inline-block rounded" alt="site logo" /></a
 				>
 			</div>
