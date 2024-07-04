@@ -46,7 +46,7 @@
 			</div>
 
 			<div class="col">
-				<a href="/" class="disabled-link"
+				<a href="/" class="disabled-link" target="_blank"
 					><img
 						src="/TailorsOnline.png"
 						class="img-fluid d-inline-block rounded"

@@ -9,7 +9,7 @@ export async function GET({ url, request }) {
     // Get the city location (for simplicity, let's use New York)
 
     // WeatherAPI.com API details
-    const apiKey = '53255cbf84a046b4b9f155901240107';
+    const apiKey = import.meta.env.VITE_API;
     const weatherApiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
 
     // Fetch the weather data
