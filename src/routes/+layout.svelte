@@ -7,18 +7,41 @@
 </script>
 
 <main>
-	<header>
-		<a href="/"><img src="/LS.png" class="img-fluid d-inline-block" alt="site logo" /></a>
-		<nav class="float-end nav flex-lg-column">
-			<div class="pagination">
-				<a class="nav-item nav-link link-primary rounded bg-secondary text-white" href="/about"><i class="bi-person"></i> About</a>
-				<a class="nav-item nav-link link-success rounded bg-secondary text-white" href="/project"><i class="bi-stickies"></i> Projects</a>
-				<a class="nav-item nav-link link-danger rounded bg-secondary text-white" href="/skills"><i class="bi-person-lines-fill"></i> Skills</a>
-				<a class="nav-item nav-link link-warning rounded bg-secondary text-white" href="/contact"><i class="bi-envelope"></i> Contact</a>
+	<div class="container-fluid bg-dark p-2">
+		<div class="row">
+			<div class="col">
+				<ul class="nav justify-content-start">
+					<li class="nav-item">
+						<a href="/"><img src="/LS.png" class="img-fluid nav-link float-start" alt="site logo" /></a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-	</header>
-
+			<div class="col">
+				<ul class="nav justify-content-end">
+					<li class="nav-item p-1">
+						<a class="nav-link link-primary rounded bg-secondary text-white" href="/about"
+							><i class="bi-person"></i> About</a
+						>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link link-success rounded bg-secondary text-white" href="/project"
+							><i class="bi-stickies"></i> Projects</a
+						>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link link-danger rounded bg-secondary text-white" href="/skills"
+							><i class="bi-person-lines-fill"></i> Skills</a
+						>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link link-warning rounded bg-secondary text-white" href="/contact"
+							><i class="bi-envelope"></i> Contact</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<slot />
 
 	<footer>
@@ -28,16 +51,16 @@
 
 <style>
 	img {
-		max-width: 5%;
-		/* filter: invert(88%) sepia(18%) saturate(886%) hue-rotate(199deg) brightness(100%) contrast(90%); */
+		max-width: 90px;
+		filter: invert(100%) sepia(18%) saturate(886%) hue-rotate(199deg) brightness(100%) contrast(90%);
 		border-radius: 50%;
 	}
-	header {
+	/* .header {
 		background: #333;
 		color: #fff;
 		padding: 1em;
-	}
-	nav a {
+	} */
+	a {
 		color: #fff;
 		margin: 0 1em;
 		text-decoration: none;
