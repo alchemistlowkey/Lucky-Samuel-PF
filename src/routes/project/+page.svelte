@@ -8,8 +8,8 @@
 	<div class="container text-center">
 		<h2 class="text-danger">Projects</h2>
 		<div class="row">
-			<div class="col bg-success rounded m-2">
-				<h3 class="text-info"><Fa icon={faGasPump} /> Fuel Price Locator</h3>
+			<div class="col bg-info rounded m-2">
+				<h3 class="text-primary"><Fa icon={faGasPump} /> Fuel Price Locator</h3>
 				<p class="text-black">
 					Fuel Price Locator is an innovative application designed to help users find the most
 					affordable petroleum products in their vicinity.
