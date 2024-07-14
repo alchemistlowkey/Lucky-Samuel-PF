@@ -19,7 +19,7 @@
             </div>
         </div>
 		<div class="row mt-4 text-black w-2">
-			<div class="col bg-linkedIn rounded p-4 m-2">
+			<div class="col bg-linkedIn text-light rounded p-4 m-2">
 				<p>Click the icon below to connect to my LinkedIn profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
