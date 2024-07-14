@@ -68,7 +68,7 @@
 	}
 	footer {
 		background: #333;
-		color: lightblue;
+		color: whitesmoke;
 		text-align: center;
 		padding: 1em;
 	}

@@ -8,23 +8,16 @@
 	import { faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<section class="text-center bg-image pb-4 pt-4 d-flex align-items-center min-vh-100 position-relative">
-	<!-- svelte-ignore a11y-img-redundant-alt -->
-	<img src="/techStack6.jpg" alt="Background Image" class="bg-img position-absolute w-100 h-100" />
-	<div class="container-fluid position-relative">
-		<div class="row text-dark">
-			<div class="col">
-				<h1>Hi, I'm Lucky Samuel, a Software Engineer (Back-end)</h1>
-				<p class="text-wrap mx-auto" style="max-width: 600px;">
-					<strong
-						>I am a backend developer with expertise in Python, ExpressJS, and Node.js. I have
-						experience working with frameworks like Django and SvelteKit. I enjoy solving complex
-						problems and learning new skills, looking forward to new challenges and opportunities to
-						grow as a developer.</strong
-					>
-				</p>
-			</div>
-		</div>
+<section class="text-center bg-image pb-4 pt-4 d-flex align-items-center min-vh-100">
+    <div class="container-fluid">
+        <div class="row text-dark">
+            <div class="col">
+                <h1>Hi, I'm Lucky Samuel, a Software Engineer (Back-end)</h1>
+                <p class="text-wrap mx-auto" style="max-width: 600px;">
+                    <strong>I am a backend developer with expertise in Python, ExpressJS, and Node.js. I have experience working with frameworks like Django and SvelteKit. I enjoy solving complex problems and learning new skills, looking forward to new challenges and opportunities to grow as a developer.</strong>
+                </p>
+            </div>
+        </div>
 		<div class="row mt-4 text-black w-2">
 			<div class="col bg-linkedIn text-light rounded p-4 m-2">
 				<p>Click the icon below to connect to my LinkedIn profile</p>
@@ -97,32 +90,28 @@
 		color: gray;
 		text-decoration: none;
 	}
-	.bg-img {
-		z-index: -1;
-		object-fit: cover;
-	}
-	/* .bg-image {
+	.bg-image{
 		background-image: url('techStack6.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		width: 100%;
-	} */
-	.bg-twitter {
+		width: 100%; /* Full width */
+	}
+	.bg-twitter{
 		background-image: url('x.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
-	.bg-linkedIn {
+	.bg-linkedIn{
 		background-image: url('linkedin5.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
-	.bg-github {
+	.bg-github{
 		background-image: url('github2.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
