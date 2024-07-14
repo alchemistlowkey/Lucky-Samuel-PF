@@ -83,7 +83,7 @@
 		text-decoration: none;
 	}
 	.bg-image{
-		background-image: url('techStack9.jpg');
+		background-image: url('../../lib/techStack9.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;

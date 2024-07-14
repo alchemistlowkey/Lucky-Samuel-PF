@@ -49,7 +49,7 @@
 		padding: 2em;
 	}
 	.bg-image{
-		background-image: url('techStack11.jpg');
+		background-image: url('../../lib/techStack11.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;

@@ -1,4 +1,5 @@
 <script>
+
 	let projects = [
 		{ title: 'Project 1', description: 'Description of project 1.' },
 		{ title: 'Project 2', description: 'Description of project 2.' }
@@ -73,14 +74,14 @@
 		padding: 1em;
 	}
 	.footer-image{
-		background-image: url('footer-image2.jpg');
+		background-image: url('../lib/footer-image2.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
 	.header-image{
-		background-image: url('footer-image1.jpg');
+		background-image: url('../lib/footer-image1.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;

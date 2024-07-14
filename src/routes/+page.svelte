@@ -91,28 +91,28 @@
 		text-decoration: none;
 	}
 	.bg-image{
-		background-image: url('techStack6.jpg');
+		background-image: url('../lib/techStack6.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
 	.bg-twitter{
-		background-image: url('x.jpg');
+		background-image: url('../lib/x.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
 	.bg-linkedIn{
-		background-image: url('linkedin5.jpg');
+		background-image: url('../lib/linkedin5.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
 	.bg-github{
-		background-image: url('github2.jpg');
+		background-image: url('../lib/github2.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
