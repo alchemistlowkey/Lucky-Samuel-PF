@@ -8,23 +8,18 @@
 	import { faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<section class="text-center">
-	<div class="container-fluid">
-		<div class="row">
-			<div>
-				<h1>Hi, I'm Lucky Samuel a Software Engineer (Back-end)</h1>
-			</div>
-			<div class="col w-100">
-				<p class="text-wrap w-200 text-black">
-					I am a backend developer with expertise in Python, ExpressJS and Node.js. I have
-					experience working with frameworks like Django and Sveltekit. I enjoy solving complex
-					problems and learning new skills, looking forward to new challenges and opportunities to
-					grow as a developer.
-				</p>
-			</div>
-		</div>
+<section class="text-center bg-image pb-4 pt-4 d-flex align-items-center min-vh-100">
+    <div class="container-fluid">
+        <div class="row text-dark">
+            <div class="col">
+                <h1>Hi, I'm Lucky Samuel, a Software Engineer (Back-end)</h1>
+                <p class="text-wrap mx-auto" style="max-width: 600px;">
+                    I am a backend developer with expertise in Python, ExpressJS, and Node.js. I have experience working with frameworks like Django and SvelteKit. I enjoy solving complex problems and learning new skills, looking forward to new challenges and opportunities to grow as a developer.
+                </p>
+            </div>
+        </div>
 		<div class="row mt-4 text-black w-2">
-			<div class="col bg-primary rounded p-4 m-2">
+			<div class="col bg-linkedIn rounded p-4 m-2">
 				<p>Click the icon below to connect to my LinkedIn profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
@@ -38,7 +33,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col bg-success rounded p-4 m-2">
+			<div class="col bg-twitter text-light rounded p-4 m-2">
 				<p>Click the icon below to connect to my Twitter profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
@@ -52,7 +47,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col bg-secondary rounded p-4 m-2">
+			<div class="col bg-github rounded p-4 m-2">
 				<p>Click the icon below to connect to my Github profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
@@ -67,8 +62,8 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row">
-			<h4>LinkedIn Certificates:</h4>
+		<div class="row mt-5">
+			<!-- <h4>Certificates:</h4> -->
 			<div class="col mt-2">
 				<a href="/" class="disabled-link"
 					><img src="/ALX-cert.png" class="img-fluid d-inline-block rounded" alt="site logo" /></a
@@ -94,5 +89,33 @@
 		cursor: default;
 		color: gray;
 		text-decoration: none;
+	}
+	.bg-image{
+		background-image: url('techStack6.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; /* Full width */
+	}
+	.bg-twitter{
+		background-image: url('x.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; /* Full width */
+	}
+	.bg-linkedIn{
+		background-image: url('linkedin5.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; /* Full width */
+	}
+	.bg-github{
+		background-image: url('github2.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; /* Full width */
 	}
 </style>

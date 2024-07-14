@@ -1,8 +1,8 @@
 <script>
 </script>
 
-<section class="text-center">
-	<div class="container">
+<section class="text-center bg-image">
+	<div class="container w-100">
 		<h2>Skills</h2>
 		<ul class="list-group">
 			<li
@@ -47,5 +47,12 @@
 <style>
 	section {
 		padding: 2em;
+	}
+	.bg-image{
+		background-image: url('techStack11.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; /* Full width */
 	}
 </style>

@@ -4,12 +4,12 @@
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<section>
+<section class="bg-image">
 	<div class="container text-center">
 		<h2 class="text-danger">Projects</h2>
 		<div class="row">
-			<div class="col bg-info rounded m-2">
-				<h3 class="text-primary"><Fa icon={faGasPump} /> Fuel Price Locator</h3>
+			<div class="col bg-none rounded m-2">
+				<h3 class="text-primary p-3"><Fa icon={faGasPump} /> Fuel Price Locator</h3>
 				<p class="text-black">
 					Fuel Price Locator is an innovative application designed to help users find the most
 					affordable petroleum products in their vicinity.
@@ -22,8 +22,8 @@
 					<Fa icon={faGithub} /></a
 				>
 			</div>
-			<div class="col bg-success rounded m-2">
-				<h3 class="text-warning"><Fa icon={faScissors} /> Tailors Online</h3>
+			<div class="col rounded m-2">
+				<h3 class="text-warning p-3"><Fa icon={faScissors} /> Tailors Online</h3>
 				<p class="text-black">
 					This platform connects users with talented tailors, providing a seamless experience in
 					finding the right designer for your fabrics.
@@ -81,5 +81,12 @@
 		cursor: default;
 		color: gray;
 		text-decoration: none;
+	}
+	.bg-image{
+		background-image: url('techStack9.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; /* Full width */
 	}
 </style>

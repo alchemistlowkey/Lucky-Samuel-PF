@@ -1,10 +1,12 @@
-<section>
+<section class="bg-image">
 	<div class="container">
-		<h2>About Me</h2>
-		<p>
-			Hello! I'm a software engineer with experience in Django, Flask, Sveltekit, Express JS, and
-			MongoDB.
-		</p>
+		<div class="row text-center">
+			<h2>About Me</h2>
+			<p class="text-dark">
+				<strong>Hello! I'm a software engineer with experience in Django, Flask, Sveltekit, Express JS, and
+				MongoDB.</strong>
+			</p>
+		</div>
 
 		<div class="row">
 			<h4>LinkedIn Certificates:</h4>
@@ -41,5 +43,12 @@
 		cursor: default;
 		color: gray;
 		text-decoration: none;
+	}
+	.bg-image{
+		background-image: url('techStack8.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; /* Full width */
 	}
 </style>
