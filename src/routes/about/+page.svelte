@@ -9,7 +9,7 @@
 		</div>
 
 		<div class="row">
-			<h4>LinkedIn Certificates:</h4>
+			<h4>Certificates:</h4>
 			<div class="col mt-2">
 				<a href="/" class="disabled-link"
 					><img src="/cert1.png" class="img-fluid d-inline-block rounded" alt="site logo" /></a
