@@ -7,7 +7,7 @@
 <section class="bg-light bg-image">
 	<div class="container">
 		<div class="sm-m-top-50 text-center justify-content-center row">
-			<form class="form-inline m-top-30 w-50 " method="post" action="">
+			<form class="form-inline m-top-30" method="post" action="">
 				<div class="form-group col">
 					<input type="text" class="form-control m-1" placeholder="Enter your Name" />
 					<input type="email" class="form-control m-1" placeholder="Enter your Email" />
@@ -29,5 +29,8 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
+	}
+	form{
+		max-width: 600px;
 	}
 </style>
