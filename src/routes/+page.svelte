@@ -20,7 +20,7 @@
         </div>
 		<div class="row mt-4 text-black w-2">
 			<div class="col bg-linkedIn text-light rounded p-4 m-2">
-				<p>Click the icon below to connect to my LinkedIn profile</p>
+				<p>LinkedIn profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
 						<a
@@ -34,7 +34,7 @@
 				</ul>
 			</div>
 			<div class="col bg-twitter text-light rounded p-4 m-2">
-				<p>Click the icon below to connect to my Twitter profile</p>
+				<p>Twitter profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
 						<a
@@ -48,7 +48,7 @@
 				</ul>
 			</div>
 			<div class="col bg-github rounded p-4 m-2">
-				<p>Click the icon below to connect to my Github profile</p>
+				<p>Github profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
 						<a
