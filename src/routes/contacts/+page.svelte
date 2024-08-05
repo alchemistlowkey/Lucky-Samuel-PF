@@ -84,7 +84,7 @@
 		border-bottom: 1px solid #ddd;
 	}
 	.bg-image {
-		background-image: url('../../lib/techStack5.jpg');
+		background-image: url('../../lib/techStack11.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;

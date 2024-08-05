@@ -29,7 +29,7 @@ app.use(
 		store: new pgSession({
 			pool: pool
 		}),
-		secret: 'your-secret-key', // Replace with a secure secret key
+		secret: process.env.SECRET, // Replace with a secure secret key
 		resave: false,
 		saveUninitialized: false,
 		cookie: { secure: false } // Set secure to true if using https
