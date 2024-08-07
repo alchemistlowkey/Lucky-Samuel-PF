@@ -17,6 +17,7 @@
 			headers: {
 				'Content-Type': 'application/json'
 			},
+			mode: 'no-cors', // Set mode to no-cors
 			body: JSON.stringify({ name, email, message })
 		});
 
