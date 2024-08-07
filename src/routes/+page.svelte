@@ -19,7 +19,7 @@
             </div>
         </div>
 		<div class="row mt-4 text-black w-2">
-			<div class="col bg-linkedIn text-light rounded p-4 m-2">
+			<div class="col bg-linkedIn text-black rounded p-4 m-2">
 				<p>LinkedIn profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
@@ -33,7 +33,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col bg-twitter text-light rounded p-4 m-2">
+			<div class="col bg-twitter text-black rounded p-4 m-2">
 				<p>Twitter profile</p>
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
@@ -90,13 +90,13 @@
 		color: gray;
 		text-decoration: none;
 	}
-	.bg-image{
+	/* .bg-image{
 		background-image: url('../lib/techStack6.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		width: 100%; /* Full width */
-	}
+		width: 100%;
+	} */
 	.bg-twitter{
 		background-image: url('../lib/x.jpg');
 		background-size: cover;
