@@ -12,12 +12,11 @@
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 
-		const response = await fetch('https://portfolio-backend-virid-phi.vercel.app/api/contact', {
+		const response = await fetch('http://localhost:5000/api/contact', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			mode: 'no-cors', // Set mode to no-cors
 			body: JSON.stringify({ name, email, message })
 		});
 
