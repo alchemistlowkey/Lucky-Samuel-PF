@@ -12,7 +12,7 @@
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 
-		const response = await fetch('https://portfolio-backend-virid-phi.vercel.app/api/contact', {
+		const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
