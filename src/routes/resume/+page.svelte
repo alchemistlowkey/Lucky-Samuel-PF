@@ -22,6 +22,6 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
-		height: 100vh;
+		height: 100lvh;
 	}
 </style>
