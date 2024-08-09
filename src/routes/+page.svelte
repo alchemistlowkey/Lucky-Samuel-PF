@@ -9,16 +9,22 @@
 </script>
 
 <section class="text-center bg-image pb-4 pt-4 d-flex align-items-center min-vh-100">
-    <div class="container-fluid">
-        <div class="row text-dark">
-            <div class="col">
-                <h1>Hi, I'm Lucky Samuel, a Software Engineer (Back-end)</h1>
-                <p class="text-wrap mx-auto" style="max-width: 600px;">
-                    <strong>I am a backend developer with expertise in Python, ExpressJS, and Node.js. I have experience working with frameworks like Django and SvelteKit. I enjoy solving complex problems and learning new skills, looking forward to new challenges and opportunities to grow as a developer.</strong>
-                </p>
-            </div>
-        </div>
+	<div class="container-fluid">
+		<div class="row text-dark">
+			<div class="col">
+				<h1>Lucky Samuel | Backend Software Engineer</h1>
+				<p class="text-wrap mx-auto fw-bold" style="max-width: 600px;">
+					Building Robust & Scalable Web Applications
+				</p>
+			</div>
+		</div>
+		
 		<div class="row mt-4 text-black w-2">
+			<h1>Get In Touch</h1>
+			<p>
+				I’m always open to new opportunities and collaborations. Whether you have a project idea or
+				just want to connect, feel free to reach out!
+			</p>
 			<div class="col bg-linkedIn text-black rounded p-4 m-2">
 				<p>LinkedIn profile</p>
 				<ul class="pagination justify-content-center">
@@ -97,21 +103,21 @@
 		background-position: center;
 		width: 100%;
 	} */
-	.bg-twitter{
+	.bg-twitter {
 		background-image: url('../lib/x.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
-	.bg-linkedIn{
+	.bg-linkedIn {
 		background-image: url('../lib/linkedin5.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
 	}
-	.bg-github{
+	.bg-github {
 		background-image: url('../lib/github2.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;

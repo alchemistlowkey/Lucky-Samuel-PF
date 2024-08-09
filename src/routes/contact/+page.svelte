@@ -32,7 +32,7 @@
 </script>
 
 <section class="bg-light bg-image">
-	<div class="container">
+	<div class="container mt-5">
 		<div class="sm-m-top-50 text-center justify-content-center row">
 			<form class="form-inline m-top-30" on:submit={handleSubmit}>
 				<div class="form-group col">
@@ -77,6 +77,7 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
+		height: 100vh;
 	}
 	form {
 		max-width: 600px;

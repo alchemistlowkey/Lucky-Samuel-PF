@@ -21,6 +21,40 @@
 				>
 					<Fa icon={faGithub} /></a
 				>
+				<br />
+				<br />
+				<div class="fw-bold">
+					<p>
+						Frontend framework: <img
+							src="https://www.vectorlogo.zone/logos/sveltetechnology/sveltetechnology-icon.svg"
+							alt="svelte"
+							width="40"
+							height="40"
+						/>
+					</p>
+					<p>
+						Backend: <img
+							src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
+							alt="NodeJS"
+							width="40"
+							height="40"
+						/>
+						<img
+							src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+							alt="expressJS"
+							width="40"
+							height="40"
+						/>
+					</p>
+					<p>
+						Database: <img
+							src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+							alt="mongodb"
+							width="40"
+							height="40"
+						/>
+					</p>
+				</div>
 			</div>
 			<div class="col rounded m-2">
 				<h3 class="text-warning p-3"><Fa icon={faScissors} /> Tailors Online</h3>
@@ -35,32 +69,70 @@
 				>
 					<Fa icon={faGithub} /></a
 				>
+				<br />
+				<br />
+				<div class="fw-bold">
+					<p>
+						Frontend framework: <img
+							src="https://www.vectorlogo.zone/logos/sveltetechnology/sveltetechnology-icon.svg"
+							alt="svelte"
+							width="40"
+							height="40"
+						/>
+					</p>
+					<p>
+						Backend: <img
+							src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
+							alt="NodeJS"
+							width="40"
+							height="40"
+						/>
+						<img
+							src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+							alt="expressJS"
+							width="40"
+							height="40"
+						/>
+					</p>
+					<p>
+						Database: <img
+							src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg"
+							alt="postgresql"
+							width="40"
+							height="40"
+						/>
+					</p>
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col">
 				<a href="https://www.fuelpricelocator.live/" class="" target="_blank"
-					><img src="/fuelpricebg.png" class="img-fluid d-inline-block rounded" alt="site logo" /></a
+					><img
+						src="/fuelpricebg.png"
+						class="img-fluid d-inline-block rounded"
+						alt="site logo"
+					/></a
 				>
 			</div>
 
 			<div class="col">
-				<a href="/" class="disabled-link" target="_blank"
+				<a href="https://www.tailorsonline.tech/" class="" target="_blank"
 					><img
 						src="/TailorsOnline.png"
 						class="img-fluid d-inline-block rounded"
 						alt="site logo"
 					/></a
 				>
-				<a href="/" class="disabled-link"
+				<a href="https://www.tailorsonline.tech/" class="" target="_blank"
 					><img
 						src="/TailorsOnline2.png"
 						class="img-fluid d-inline-block rounded"
 						alt="site logo"
 					/></a
 				>
-				<a href="/" class="disabled-link"
+				<a href="https://www.tailorsonline.tech/" class="" target="_blank"
 					><img
 						src="/TailorsOnline3.png"
 						class="img-fluid d-inline-block rounded"
@@ -76,13 +148,8 @@
 	section {
 		padding: 2em;
 	}
-	.disabled-link {
-		pointer-events: none;
-		cursor: default;
-		color: gray;
-		text-decoration: none;
-	}
-	.bg-image{
+
+	.bg-image {
 		background-image: url('../../lib/techStack9.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;

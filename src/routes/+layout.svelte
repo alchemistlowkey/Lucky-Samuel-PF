@@ -26,6 +26,11 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item pt-1">
+						<a class="nav-link link-primary rounded bg-secondary text-white text-end pe-3" href="/resume">
+							<i class="bi-person"></i> Resume
+						</a>
+					</li>
+					<li class="nav-item pt-1">
 						<a class="nav-link link-primary rounded bg-secondary text-white text-end pe-3" href="/about">
 							<i class="bi-person"></i> About
 						</a>
