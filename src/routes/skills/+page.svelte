@@ -97,6 +97,12 @@
 						height="40"
 					/>
 					<img
+						src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg"
+						alt="vagrant"
+						width="40"
+						height="40"
+					/>
+					<img
 						src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
 						alt="git"
 						width="40"
@@ -111,6 +117,32 @@
 					<img
 						src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg"
 						alt="Linux"
+						width="40"
+						height="40"
+					/>
+				</span>
+			</li>
+			<li
+				class="list-group-item d-flex
+			justify-content-between
+			align-items-center list-group-item-success"
+			>
+				IDE<span class="badge"
+					><img
+						src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg"
+						alt="VSCode"
+						width="40"
+						height="40"
+					/>
+					<img
+						src="https://www.vectorlogo.zone/logos/vim/vim-icon.svg"
+						alt="VIM"
+						width="40"
+						height="40"
+					/>
+					<img
+						src="https://www.svgrepo.com/download/354237/pycharm.svg"
+						alt="Pycharm"
 						width="40"
 						height="40"
 					/>
@@ -156,6 +188,79 @@
 			</li>
 		</ul>
 	</div>
+	<div class="container mt-5 rounded">
+		<h1 class="pt-2 pb-3 fw-semibold">Skills Summary</h1>
+		<ul class="list-group p-1 fw-semibold">
+			<li class="list-group-item list-group-item-success">
+				Frontend Development:
+				<ul class="list-group">
+					<li class="list-group-item">
+						Skilled in React, Svelte and SvelteKit for creating modern, reactive web applications.
+					</li>
+					<li class="list-group-item">Use of Bootstrap for responsive and aesthetically pleasing design.</li>
+				</ul>
+			</li>
+			<li class="list-group-item list-group-item-primary">
+				Backend Development Expertise:
+				<ul class="list-group">
+					<li class="list-group-item">Experience with Express JS and Node.js for creating efficient backend services.</li>
+					<li class="list-group-item">
+						Proficiency in Django and Flask for building robust and scalable web applications.
+					</li>
+				</ul>
+			</li>
+			<li class="list-group-item list-group-item-danger">
+				Database Management:
+				<ul class="list-group">
+					<li class="list-group-item">Proficient in PostgreSQL and MongoDB for managing and querying complex data.</li>
+					<li class="list-group-item">Experience hosting databases on Supabase.</li>
+				</ul>
+			</li>
+			<li class="list-group-item list-group-item-dark">
+				Deployment and DevOps:
+				<ul class="list-group">
+					<li class="list-group-item">Expertise in deploying applications on Azure virtual Linux servers.</li>
+					<li class="list-group-item">Familiarity with deploying SvelteKit apps and Node.js backends on Vercel.</li>
+				</ul>
+			</li>
+			<li class="list-group-item list-group-item-warning">
+				Full-Stack Development:
+				<ul class="list-group">
+					<li class="list-group-item">
+						Ability to seamlessly integrate frontend and backend technologies for complete web
+						solutions.
+					</li>
+					<li class="list-group-item">Experience with user authentication management in full-stack applications.</li>
+				</ul>
+			</li>
+			<li class="list-group-item list-group-item-info">
+				Project Experience:
+				<ul class="list-group">
+					<li class="list-group-item">
+						Practical experience gained from the ALX program, working on challenging tasks and
+						real-world projects.
+					</li>
+					<li class="list-group-item">
+						Developed a portfolio project using Svelte for the front end and Express JS for the
+						backend.
+					</li>
+				</ul>
+			</li>
+			<li class="list-group-item list-group-item-violet">
+				Continuous Learning and Adaptability:
+				<ul class="list-group">
+					<li class="list-group-item">
+						Commitment to broadening knowledge and taking on more challenging tasks to improve
+						coding skills.
+					</li>
+					<li class="list-group-item">
+						Writing technical blog posts to share knowledge and contribute to the developer
+						community.
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 </section>
 
 <style>
@@ -168,6 +273,8 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 100%; /* Full width */
-		height: 100lvh;
+	}
+	.list-group-item-violet {
+		background-color: #ddc7f1;
 	}
 </style>
