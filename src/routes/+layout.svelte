@@ -6,7 +6,7 @@
 	<div class="container-fluid bg-dark pt-2 header-image">
 		<nav class="navbar navbar-expand-lg navbar-dark">
 			<a class="navbar-brand" href="/">
-				<img src="/LS.png" class="img-fluid nav-link float-start" alt="site logo" />
+				<img src="/LS_dc.png" class="img-fluid nav-link float-start bg-white" alt="site logo" />
 			</a>
 			<button
 				class="navbar-toggler"
