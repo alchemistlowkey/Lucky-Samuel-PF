@@ -1,12 +1,22 @@
 <script>
 	export let headerBG = '';
 	export let Bg = '';
+	export let NavBg = '';
 </script>
 
 {#if Bg}
   <section
     class="bg fw-bold pt-5"
     style="background-image: url('/images/{Bg}')"
+  >
+    <slot></slot>
+  </section>
+{/if}
+
+{#if NavBg}
+  <section
+    class="bg fw-bold"
+    style="background-image: url('/images/{NavBg}')"
   >
     <slot></slot>
   </section>

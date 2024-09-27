@@ -1,9 +1,10 @@
 <script>
 	import Certificates from '../shared/Certificates.svelte';
 	import ListItems from '../shared/ListItems.svelte';
+	import Bg from '../shared/Bg.svelte';
 </script>
 
-<section class="bg-image">
+<Bg Bg="techStack8.jpg">
 	<div class="container text-center">
 		<div class="row text-dark pt-4">
 			<div class="col">
@@ -55,7 +56,7 @@
 			</div>
 		</div>
 
-		<div class="row mt-5">
+		<div class="row py-5">
 			<h4>Certificates:</h4>
 
 			<Certificates
@@ -88,18 +89,7 @@
 			/>
 		</div>
 	</div>
-</section>
+</Bg>
 
 <style>
-	section {
-		font-family: 'Poppins';
-		padding: 2em;
-	}
-	.bg-image {
-		background-image: url('../lib/img/techStack8.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		width: 100%; /* Full width */
-	}
 </style>

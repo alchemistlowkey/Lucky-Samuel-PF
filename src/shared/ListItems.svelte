@@ -1,12 +1,12 @@
 <script>
 	export let ListItems = [];
 	export let ListSkills = [];
+	export let ListNavItems = [];
 	export let BackgroundColors = [
 		'BgBlue',
 		'BgYellow',
 		'BgOrange',
 		'BgIndigo',
-		'BgRed',
 		'BgPink',
 		'BgGreen',
 		'BgPurple'
@@ -50,19 +50,29 @@
 	{/each}
 {/if}
 
+{#if ListNavItems}
+	{#each ListNavItems as navItem}
+		<li class="nav-item pt-1">
+			<a class="nav-link rounded {getUniqueBackgroundColor()} text-white fw-bold text-end pe-2 mx-3" href={navItem.href}>
+				<i class={navItem.icon}></i> {navItem.text}
+			</a>
+		</li>
+	{/each}
+{/if}
+
 <style>
 	/* Background colors */
 	.BgBlue {
 		background-color: skyblue;
 	}
 	.BgOrange {
-		background-color: orange;
+		background-color: gold;
 	}
 	.BgGreen {
-		background-color: green;
+		background-color: lightgreen;
 	}
 	.BgYellow {
-		background-color: yellow;
+		background-color: greenyellow;
 	}
 	.BgIndigo {
 		background-color: fuchsia;
@@ -73,32 +83,26 @@
 	.BgPink {
 		background-color: pink;
 	}
-	.BgRed {
-		background-color: lightcoral;
-	}
 	/* Hover effects */
 	.BgBlue:hover {
-		background-color: greenyellow;
+		background-color: lightcoral;
 	}
 	.BgOrange:hover {
-		background-color: blueviolet;
+		background-color: lightcyan;
 	}
 	.BgGreen:hover {
-		background-color: yellow;
+		background-color: lightgoldenrodyellow;
 	}
 	.BgYellow:hover {
-		background-color: green;
+		background-color: lightslategray;
 	}
 	.BgIndigo:hover {
-		background-color: purple;
+		background-color: lightseagreen;
 	}
 	.BgPurple:hover {
-		background-color: pink;
+		background-color: lightsteelblue;
 	}
 	.BgPink:hover {
-		background-color: red;
-	}
-	.BgRed:hover {
-		background-color: blue;
+		background-color: navajowhite;
 	}
 </style>

@@ -1,8 +1,10 @@
 <script>
+	import ListItems from '../shared/ListItems.svelte';
+	import Bg from '../shared/Bg.svelte';
 </script>
 
-<main>
-	<div class="container-fluid bg-dark pt-2 header-image">
+<Bg NavBg="footer-image1.jpg">
+	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-dark">
 			<a class="navbar-brand" href="/">
 				<img
@@ -25,56 +27,22 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item pt-1">
-						<a
-							class="nav-link link-primary rounded bg-secondary text-white text-end pe-3"
-							href="/resume"
-						>
-							<i class="bi-person"></i> Resume
-						</a>
-					</li>
-					<li class="nav-item pt-1">
-						<a
-							class="nav-link link-primary rounded bg-secondary text-white text-end pe-3"
-							href="/about"
-						>
-							<i class="bi-person"></i> About
-						</a>
-					</li>
-					<li class="nav-item pt-1">
-						<a
-							class="nav-link link-success rounded bg-secondary text-white text-end pe-3"
-							href="/project"
-						>
-							<i class="bi-stickies"></i> Projects
-						</a>
-					</li>
-					<li class="nav-item pt-1">
-						<a
-							class="nav-link link-danger rounded bg-secondary text-white text-end pe-3"
-							href="/skills"
-						>
-							<i class="bi-person-lines-fill"></i> Skills
-						</a>
-					</li>
-					<li class="nav-item pt-1">
-						<a
-							class="nav-link link-warning rounded bg-secondary text-white text-end pe-3"
-							href="/contact"
-						>
-							<i class="bi-envelope"></i> Contact
-						</a>
-					</li>
+					<ListItems
+						ListNavItems={[
+							{ href: '/resume', icon: 'bi-file-pdf-fill', text: 'Resume' },
+							{ href: '/about', icon: 'bi-person-fill', text: 'About' },
+							{ href: '/project', icon: 'bi-stickies-fill', text: 'Projects' },
+							{ href: '/skills', icon: 'bi-person-lines-fill', text: 'Skills' },
+							{ href: '/contact', icon: 'bi-envelope-fill', text: 'Contact' }
+						]}
+					/>
 				</ul>
 			</div>
 		</nav>
 	</div>
-</main>
+</Bg>
 
 <style>
-	main {
-		font-family: "Poppins";
-	}
 	img {
 		max-width: 90px;
 		filter: invert(100%) sepia(18%) saturate(886%) hue-rotate(199deg) brightness(100%) contrast(90%);
@@ -85,12 +53,11 @@
 		margin: 0 1em;
 		text-decoration: none;
 	}
-
-	.header-image {
-		background-image: url('../lib/img/footer-image1.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		width: 100%; /* Full width */
-	}
+	/* .fix {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	} */
 </style>
