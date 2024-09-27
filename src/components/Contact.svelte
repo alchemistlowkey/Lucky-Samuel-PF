@@ -3,7 +3,7 @@
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 	import { onMount } from 'svelte';
-	import Bg from "../shared/Bg.svelte";
+	import Bg from '../shared/Bg.svelte';
 
 	let name = '';
 	let email = '';
