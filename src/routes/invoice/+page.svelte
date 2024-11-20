@@ -2,6 +2,7 @@
 	import '$lib/input.css';
 	import jsPDF from 'jspdf';
 	import 'jspdf-autotable'; // Add autotable for table support
+	import { success, warning, failure } from '$lib/toast-theme.js'
 
 	function getDate() {
 		const date = new Date();
@@ -29,7 +30,11 @@
 		if (newItem.description && newItem.personnel > 0 && newItem.amount >= 0) {
 			items = [...items, { ...newItem }]; // Add item to the list
 			calculateTotal(); // Recalculate total
+			success(`Added ${newItem.description} with ${newItem.personnel} personnel for ₦${formatCurrency(newItem.amount)} each!`)
 			newItem = { description: '', personnel: 1, amount: 0 }; // Reset input fields
+		}
+		else {
+			warning(`Please fill in all fields correctly!`)
 		}
 	}
 
@@ -38,6 +43,7 @@
 		items.splice(index, 1);
 		items = [...items]; // Update the array
 		calculateTotal();
+		warning(`Removed ${index + 1} item from the invoice!`)
 	}
 
 	// Calculate total
@@ -124,32 +130,32 @@
 	<div>
 		<form onsubmit={addItem} class="grid grid-cols-1 mx-auto">
 			<input
-				class="bg-slate-300 p-2 m-2 rounded-lg capitalize"
+				class="bg-slate-300 md:p-2 p-1 m-2 rounded-lg capitalize"
 				type="text"
 				placeholder="Customer's name"
 				bind:value={name}
 			/>
 			<input
-				class="bg-slate-300 p-2 m-2 rounded-lg"
+				class="bg-slate-300 md:p-2 p-1 m-2 rounded-lg"
 				type="date"
 				bind:value={date}
 				min={getDate()}
 			/>
 			<input
-				class="bg-slate-300 p-2 m-2 rounded-lg capitalize"
+				class="bg-slate-300 md:p-2 p-1 m-2 rounded-lg capitalize"
 				type="text"
 				placeholder="Description"
 				bind:value={newItem.description}
 			/>
 			<input
-				class="bg-slate-300 p-2 m-2 rounded-lg"
+				class="bg-slate-300 md:p-2 p-1 m-2 rounded-lg"
 				type="number"
 				placeholder="Personnel"
 				bind:value={newItem.personnel}
 				min="1"
 			/>
 			<input
-				class="bg-slate-300 p-2 m-2 rounded-lg"
+				class="bg-slate-300 md:p-2 p-1 m-2 rounded-lg"
 				type="number"
 				placeholder="Amount"
 				bind:value={newItem.amount}
@@ -178,36 +184,36 @@
 
 	<div class="grid grid-cols-2 mx-auto py-5">
 		<div>
-			<h2 class="text-2xl float-start capitalize">Name: {name}</h2>
+			<h2 class="md:text-2xl text-base float-start capitalize">Name: {name}</h2>
 		</div>
 		<div>
-			<h2 class="text-2xl float-end">Date: {date}</h2>
+			<h2 class="md:text-2xl text-base float-end">Date: {date}</h2>
 		</div>
 	</div>
 
-	<table class="table-auto w-full border-collapse border border-gray-300">
+	<table class="table mx-0 border-collapse border border-gray-300">
 		<thead class="bg-gray-200">
 			<tr>
-				<th class="border border-gray-300 p-2">Description</th>
-				<th class="border border-gray-300 p-2">Personnel</th>
-				<th class="border border-gray-300 p-2">Amount</th>
-				<th class="border border-gray-300 p-2">Total</th>
-				<th class="border border-gray-300 p-2">Actions</th>
+				<th class="border border-gray-300 md:p-2 p-1">Description</th>
+				<th class="border border-gray-300 md:p-2 p-1">Personnel</th>
+				<th class="border border-gray-300 md:p-2 p-1">Amount</th>
+				<th class="border border-gray-300 md:p-2 p-1">Total</th>
+				<th class="border border-gray-300 md:p-2 p-1">Actions</th>
 			</tr>
 		</thead>
 		<tbody>
 			{#each items as item, index}
 				<tr>
-					<td class="border border-gray-300 p-2 capitalize">{item.description}</td>
-					<td class="border border-gray-300 p-2">{item.personnel}</td>
-					<td class="border border-gray-300 p-2">₦{formatCurrency(item.amount.toFixed(2))}</td>
-					<td class="border border-gray-300 p-2"
+					<td class="border border-gray-300 md:p-2 p-1 capitalize">{item.description}</td>
+					<td class="border border-gray-300 md:p-2 p-1">{item.personnel}</td>
+					<td class="border border-gray-300 md:p-2 p-1">₦{formatCurrency(item.amount.toFixed(2))}</td>
+					<td class="border border-gray-300 md:p-2 p-1"
 						>₦{formatCurrency((item.personnel * item.amount).toFixed(2))}</td
 					>
-					<td class="border border-gray-300 p-2">
+					<td class="border border-gray-300 md:p-2 p-1">
 						<button
 							onclick={() => removeItem(index)}
-							class="bg-red-500 btn hover:bg-rose-800 text-white px-2 py-1 rounded-lg"
+							class="bg-red-500 hover:bg-rose-800 text-white rounded-lg"
 						>
 							Remove
 						</button>
@@ -236,13 +242,5 @@
 </section>
 
 <style>
-	.table-auto {
-		width: 100%;
-		border-collapse: collapse;
-	}
-	.table-auto th,
-	.table-auto td {
-		text-align: left;
-		padding: 8px;
-	}
+	
 </style>
