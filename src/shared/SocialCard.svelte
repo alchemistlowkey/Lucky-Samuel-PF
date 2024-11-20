@@ -1,18 +1,21 @@
 <script>
 	import Bg from './Bg.svelte';
-	export let SocialCard = [];
-	export let SocialIcons = [];
-	export let TextBlue = false;
-	export let TextYellow = false;
-	export let BackgroundColors = [
-		'BgBlue',
-		'BgYellow',
-		'BgOrange',
-		'BgIndigo',
-		'BgPink',
-		'BgGreen',
-		'BgPurple'
-	];
+	let {
+		SocialCard = [],
+		SocialIcons = [],
+		TextBlue = false,
+		TextYellow = false,
+		BackgroundColors = [
+			'BgBlue',
+			'BgYellow',
+			'BgOrange',
+			'BgIndigo',
+			'BgPink',
+			'BgGreen',
+			'BgPurple'
+		]
+	} = $props();
+	
 	// Create a shallow copy of BackgroundColors to ensure the original array is not modified
 	let availableColors = [...BackgroundColors];
 

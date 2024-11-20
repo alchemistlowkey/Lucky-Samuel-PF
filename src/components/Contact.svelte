@@ -35,7 +35,7 @@
 <Bg Bg="techStack1.jpg">
 	<div class="container pb">
 		<div class="sm-m-top-50 text-center justify-content-center row">
-			<form class="form-inline m-top-30" on:submit={handleSubmit}>
+			<form class="form-inline m-top-30" onsubmit={handleSubmit}>
 				<div class="form-group col">
 					<input
 						type="text"

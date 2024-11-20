@@ -5,7 +5,7 @@
 	import Image from '../shared/Image.svelte';
 	import SocialCard from '../shared/SocialCard.svelte';
 
-	export let projects = [
+	let {projects = [
 		{
 			title: 'Fuel Price Locator',
 			description:
@@ -16,7 +16,7 @@
 			description:
 				'This platform connects users with talented tailors, providing a seamless experience in finding the right designer for your fabrics.'
 		}
-	];
+	]} = $props();
 </script>
 
 <section class="">

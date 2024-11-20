@@ -1,7 +1,5 @@
 <script>
-	export let Images = [];
-	export let ProjectsImg = [];
-	export let Img = [];
+	let { Images = [], ProjectsImg = [], Img = [] } = $props();
 </script>
 
 {#if Images}
@@ -15,7 +13,12 @@
 {#if ProjectsImg}
 	{#each ProjectsImg as img}
 		<a href={img.href} class="" target="_blank"
-			><img src={img.src} class="img-fluid d-inline-block rounded" alt={img.alt} loading="lazy" /></a
+			><img
+				src={img.src}
+				class="img-fluid d-inline-block rounded"
+				alt={img.alt}
+				loading="lazy"
+			/></a
 		>
 	{/each}
 {/if}

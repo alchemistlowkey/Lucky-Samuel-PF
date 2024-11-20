@@ -24,7 +24,6 @@
 
 <style>
 	section {
-		font-family: 'Poppins';
 		padding: 2em;
 	}
 </style>

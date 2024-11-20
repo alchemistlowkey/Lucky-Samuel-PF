@@ -1,16 +1,18 @@
 <script>
-	export let ListItems = [];
-	export let ListSkills = [];
-	export let ListNavItems = [];
-	export let BackgroundColors = [
-		'BgBlue',
-		'BgYellow',
-		'BgOrange',
-		'BgIndigo',
-		'BgPink',
-		'BgGreen',
-		'BgPurple'
-	];
+	let {
+		ListItems = [],
+		ListSkills = [],
+		ListNavItems = [],
+		BackgroundColors = [
+			'BgBlue',
+			'BgYellow',
+			'BgOrange',
+			'BgIndigo',
+			'BgPink',
+			'BgGreen',
+			'BgPurple'
+		]
+	} = $props();
 
 	// Create a shallow copy of BackgroundColors to ensure the original array is not modified
 	let availableColors = [...BackgroundColors];
