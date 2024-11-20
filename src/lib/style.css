@@ -1,0 +1,64 @@
+section {
+    font-family: 'Poppins';
+    padding: 2em;
+}
+
+/* Text colors */
+.text-blue {
+    color: blue;
+}
+.text-yellow {
+    color: orange;
+}
+.text-blue:hover {
+    color: greenyellow;
+}
+.text-yellow:hover {
+    color: blueviolet;
+}
+
+/* Background colors for the buttons */
+.BgBlue {
+    background-color: darkblue;
+}
+.BgOrange {
+    background-color: darkgoldenrod;
+}
+.BgGreen {
+    background-color: darkgreen;
+}
+.BgYellow {
+    background-color: darkolivegreen;
+}
+.BgIndigo {
+    background-color: darkcyan;
+}
+.BgPurple {
+    background-color: darkorange;
+}
+.BgPink {
+    background-color: darkorchid;
+}
+/* Hover effects */
+.BgBlue:hover {
+    background-color: lightcoral;
+}
+.BgOrange:hover {
+    background-color: lightskyblue;
+}
+.BgGreen:hover {
+    background-color: sandybrown;
+}
+.BgYellow:hover {
+    background-color: lightslategray;
+}
+.BgIndigo:hover {
+    background-color: lightseagreen;
+}
+.BgPurple:hover {
+    background-color: limegreen;
+}
+.BgPink:hover {
+    background-color: lightpink;
+}
+

@@ -3,18 +3,18 @@
 	import Certificates from '../shared/Certificates.svelte';
 </script>
 
-<section class="text-center bg-image pb-4 pt-4 d-flex align-items-center min-vh-100">
+<section class="text-center bg-image pb-4 d-flex align-items-center min-vh-100">
 	<div class="container-fluid">
 		<div class="row mx-0 text-dark">
 			<div class="col">
 				<h1 class="fs-3">Lucky Samuel | Fullstack Software Engineer (Backend Heavy)</h1>
-				<p class="text-wrap mx-auto fw-bold" style="max-width: 600px;">
+				<p class="text-wrap mx-auto fw-bold max-w-xl">
 					Building Robust, SEO optimized & Scalable Web Applications
 				</p>
 			</div>
 		</div>
 
-		<div class="row mx-0 mt-4 text-black w-2">
+		<div class="row mx-0 mt-4 text-black">
 			<h1>Get In Touch</h1>
 			<p>
 				I’m always open to new opportunities and collaborations. Whether you have a project idea or
@@ -83,8 +83,4 @@
 </section>
 
 <style>
-	section {
-        font-family: 'Poppins';
-		padding: 2em;
-	}
 </style>

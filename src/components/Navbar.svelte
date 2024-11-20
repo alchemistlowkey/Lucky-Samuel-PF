@@ -33,6 +33,7 @@
 							{ href: '/about', icon: 'bi-person-fill', text: 'About' },
 							{ href: '/project', icon: 'bi-stickies-fill', text: 'Projects' },
 							{ href: '/skills', icon: 'bi-person-lines-fill', text: 'Skills' },
+							{ href: '/invoice', icon: 'bi-receipt', text: 'invoice' },
 							{ href: '/contact', icon: 'bi-envelope-fill', text: 'Contact' }
 						]}
 					/>

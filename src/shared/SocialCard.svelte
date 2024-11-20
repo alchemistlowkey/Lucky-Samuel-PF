@@ -38,7 +38,8 @@
 								<a
 									class="page-link {getUniqueBackgroundColor()} text-white"
 									href={card.href}
-									target="_blank"><i class={card.icon}></i></a
+									target="_blank"
+									aria-label={card.head}><i class={card.icon}></i></a
 								>
 							</li>
 						</ul>
@@ -57,6 +58,7 @@
 			class:text-yellow={TextYellow}
 			href={socialicon.href}
 			target="_blank"
+			aria-label={socialicon.label}
 		>
 			<i class={socialicon.icon}></i></a
 		>
@@ -64,59 +66,4 @@
 {/if}
 
 <style>
-	.text-blue {
-		color: blue;
-	}
-	.text-yellow {
-		color: orange;
-	}
-	.text-blue:hover {
-		color: greenyellow;
-	}
-	.text-yellow:hover {
-		color: blueviolet;
-	}
-	.BgBlue {
-		background-color: skyblue;
-	}
-	.BgOrange {
-		background-color: gold;
-	}
-	.BgGreen {
-		background-color: lightgreen;
-	}
-	.BgYellow {
-		background-color: greenyellow;
-	}
-	.BgIndigo {
-		background-color: fuchsia;
-	}
-	.BgPurple {
-		background-color: gray;
-	}
-	.BgPink {
-		background-color: pink;
-	}
-	/* Hover effects */
-	.BgBlue:hover {
-		background-color: lightcoral;
-	}
-	.BgOrange:hover {
-		background-color: lightcyan;
-	}
-	.BgGreen:hover {
-		background-color: lightgoldenrodyellow;
-	}
-	.BgYellow:hover {
-		background-color: lightslategray;
-	}
-	.BgIndigo:hover {
-		background-color: lightseagreen;
-	}
-	.BgPurple:hover {
-		background-color: lightsteelblue;
-	}
-	.BgPink:hover {
-		background-color: navajowhite;
-	}
 </style>

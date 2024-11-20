@@ -36,7 +36,7 @@
 
 {#if ListSkills}
 	{#each ListSkills as skill}
-		<li class="list-group-item {getUniqueBackgroundColor()}">
+		<li class="list-group-item text-white font-extrabold {getUniqueBackgroundColor()}">
 			{skill.head}:
 			<ul class="list-group">
 				<li class="list-group-item">
@@ -53,8 +53,12 @@
 {#if ListNavItems}
 	{#each ListNavItems as navItem}
 		<li class="nav-item pt-1">
-			<a class="nav-link rounded {getUniqueBackgroundColor()} text-white fw-bold text-end pe-2 mx-3" href={navItem.href}>
-				<i class={navItem.icon}></i> {navItem.text}
+			<a
+				class="nav-link rounded {getUniqueBackgroundColor()} text-white glass font-extrabold text-end pe-2 mx-3"
+				href={navItem.href}
+			>
+				<i class={navItem.icon}></i>
+				{navItem.text}
 			</a>
 		</li>
 	{/each}
@@ -62,47 +66,4 @@
 
 <style>
 	/* Background colors */
-	.BgBlue {
-		background-color: skyblue;
-	}
-	.BgOrange {
-		background-color: gold;
-	}
-	.BgGreen {
-		background-color: lightgreen;
-	}
-	.BgYellow {
-		background-color: greenyellow;
-	}
-	.BgIndigo {
-		background-color: fuchsia;
-	}
-	.BgPurple {
-		background-color: gray;
-	}
-	.BgPink {
-		background-color: pink;
-	}
-	/* Hover effects */
-	.BgBlue:hover {
-		background-color: lightcoral;
-	}
-	.BgOrange:hover {
-		background-color: lightcyan;
-	}
-	.BgGreen:hover {
-		background-color: lightgoldenrodyellow;
-	}
-	.BgYellow:hover {
-		background-color: lightslategray;
-	}
-	.BgIndigo:hover {
-		background-color: lightseagreen;
-	}
-	.BgPurple:hover {
-		background-color: lightsteelblue;
-	}
-	.BgPink:hover {
-		background-color: navajowhite;
-	}
 </style>

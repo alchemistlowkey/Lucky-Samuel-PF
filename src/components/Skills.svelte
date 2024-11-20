@@ -6,7 +6,7 @@
 
 <Bg Bg="/techStack11.jpg">
 	<div class="container pt-5">
-		<h2 class="pt-2 pb-3">Skills</h2>
+		<h2 class="pt-2 pb-3 text-white font-bold">Skills</h2>
 		<ul class="list-group">
 			<li
 				class="list-group-item d-flex
@@ -43,8 +43,16 @@
 								alt: 'Django'
 							},
 							{
-								src: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg',
+								src: 'https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-icon~v2.svg',
 								alt: 'Flask'
+							},
+							{
+								src: 'https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg',
+								alt: 'Supabase'
+							},
+							{
+								src: 'https://www.vectorlogo.zone/logos/golang/golang-official.svg',
+								alt: 'Golang'
 							}
 						]}
 					/>
@@ -95,6 +103,20 @@
 					/>
 				</span>
 			</li>
+			<li
+				class="list-group-item d-flex
+						justify-content-between
+						align-items-center list-group-item-secondary"
+			>
+				Cloud<span class="badge">
+					<Image
+						Img={[
+							{ src: 'https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg', alt: 'AWS' },
+							{ src: 'https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg', alt: 'Azure' },
+							{ src: 'https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg', alt: 'GCP' }
+						]}
+					/>
+				</span>
 			<li
 				class="list-group-item d-flex
 			justify-content-between

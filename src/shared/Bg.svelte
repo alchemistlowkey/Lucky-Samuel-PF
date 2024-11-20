@@ -36,7 +36,6 @@
   section{
     padding: 0;
     margin: 0;
-    font-family: "Poppins";
   }
 	.bg {
 		background-size: cover;
