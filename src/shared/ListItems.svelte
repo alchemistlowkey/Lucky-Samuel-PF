@@ -56,7 +56,7 @@
 	{#each ListNavItems as navItem}
 		<li class="nav-item pt-1">
 			<a
-				class="nav-link rounded {getUniqueBackgroundColor()} text-white glass font-extrabold text-end pe-2 mx-3"
+				class="nav-link rounded {getUniqueBackgroundColor()} text-white font-extrabold text-end pe-2 mx-3"
 				href={navItem.href}
 			>
 				<i class={navItem.icon}></i>
