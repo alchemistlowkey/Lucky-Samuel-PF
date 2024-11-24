@@ -14,6 +14,7 @@
 		"@sveltejs/enhanced-img": "^0.4.1",
 		"@sveltejs/kit": "^2.8.1",
 		"@sveltejs/vite-plugin-svelte": "^4.0.1",
+		"@tailwindcss/typography": "^0.5.14",
 		"@types/eslint": "^9.6.1",
 		"autoprefixer": "^10.4.20",
 		"daisyui": "^4.12.14",
@@ -25,8 +26,9 @@
 		"postcss": "^8.4.49",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.8",
+		"prettier-plugin-tailwindcss": "^0.6.5",
 		"svelte": "^5.2.2",
-		"tailwindcss": "^3.4.15",
+		"tailwindcss": "^3.4.9",
 		"vite": "^5.4.11"
 	},
 	"type": "module",
@@ -45,6 +47,7 @@
 		"pg": "^8.13.1",
 		"Portfolio": "file:",
 		"svelte-fa": "^4.0.3",
-		"svelte-icons": "^2.1.0"
+		"svelte-icons": "^2.1.0",
+		"svelte-ux": "^0.75.5"
 	}
 }

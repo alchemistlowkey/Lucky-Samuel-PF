@@ -2,7 +2,7 @@
 	import '$lib/input.css';
 	import jsPDF from 'jspdf';
 	import 'jspdf-autotable'; // Add autotable for table support
-	import { success, warning, failure } from '$lib/toast-theme.js'
+	import { success, warning, failure } from '$lib/toast-theme.js';
 
 	function getDate() {
 		const date = new Date();
@@ -30,11 +30,12 @@
 		if (newItem.description && newItem.personnel > 0 && newItem.amount >= 0) {
 			items = [...items, { ...newItem }]; // Add item to the list
 			calculateTotal(); // Recalculate total
-			success(`Added ${newItem.description} with ${newItem.personnel} personnel for ₦${formatCurrency(newItem.amount)} each!`)
+			success(
+				`Added ${newItem.description} with ${newItem.personnel} personnel for ₦${formatCurrency(newItem.amount)} each!`
+			);
 			newItem = { description: '', personnel: 1, amount: 0 }; // Reset input fields
-		}
-		else {
-			warning(`Please fill in all fields correctly!`)
+		} else {
+			warning(`Please fill in all fields correctly!`);
 		}
 	}
 
@@ -43,7 +44,7 @@
 		items.splice(index, 1);
 		items = [...items]; // Update the array
 		calculateTotal();
-		warning(`Removed ${index + 1} item from the invoice!`)
+		warning(`Removed 1 item from the invoice!`);
 	}
 
 	// Calculate total
@@ -112,8 +113,7 @@
 			doc.text(thankYouText, thankYouXOffset, doc.previousAutoTable.finalY + 30);
 
 			doc.setFontSize(12);
-			const additionalMessage =
-				'Created at www.luckysamuel.me.';
+			const additionalMessage = 'Created at www.luckysamuel.me.';
 			const additionalMessageTextWidth =
 				(doc.getStringUnitWidth(additionalMessage) * doc.internal.getFontSize()) /
 				doc.internal.scaleFactor;
@@ -126,7 +126,7 @@
 	}
 </script>
 
-<section class="max-w-lg mx-auto justify-between m-5">
+<section class="md:max-w-lg mx-auto justify-between md:m-5">
 	<div>
 		<form onsubmit={addItem} class="grid grid-cols-1 mx-auto">
 			<input
@@ -172,7 +172,7 @@
 	</div>
 </section>
 
-<section class="max-w-5xl mx-auto glass bg-[#f6fffd] mb-5 p-5 rounded-lg">
+<section class="md:max-w-5xl mx-auto glass bg-[#f6fffd] mb-5 md:p-5 rounded-lg">
 	<div class="grid grid-cols-2 mx-auto p-5">
 		<div>
 			<h1 class="font-semibold uppercase float-start md:text-6xl text-2xl">Invoice</h1>
@@ -191,37 +191,40 @@
 		</div>
 	</div>
 
-	<table class="table mx-0 border-collapse border border-gray-300">
-		<thead class="bg-gray-200">
-			<tr>
-				<th class="border border-gray-300 md:p-2 p-1">Description</th>
-				<th class="border border-gray-300 md:p-2 p-1">Personnel</th>
-				<th class="border border-gray-300 md:p-2 p-1">Amount</th>
-				<th class="border border-gray-300 md:p-2 p-1">Total</th>
-				<th class="border border-gray-300 md:p-2 p-1">Actions</th>
-			</tr>
-		</thead>
-		<tbody>
-			{#each items as item, index}
+	<div class="overflow-x-auto">
+		<table
+			class="table mx-0 border-collapse border border-gray-300 rounded-lg w-full"
+		>
+			<thead class="bg-gray-200 rounded-lg text-center">
 				<tr>
-					<td class="border border-gray-300 md:p-2 p-1 capitalize">{item.description}</td>
-					<td class="border border-gray-300 md:p-2 p-1">{item.personnel}</td>
-					<td class="border border-gray-300 md:p-2 p-1">₦{formatCurrency(item.amount.toFixed(2))}</td>
-					<td class="border border-gray-300 md:p-2 p-1"
-						>₦{formatCurrency((item.personnel * item.amount).toFixed(2))}</td
-					>
-					<td class="border border-gray-300 md:p-2 p-1">
-						<button
-							onclick={() => removeItem(index)}
-							class="bg-red-500 hover:bg-rose-800 text-white rounded-lg"
-						>
-							Remove
-						</button>
-					</td>
+					<th>Description</th>
+					<th>Personnel</th>
+					<th>Amount</th>
+					<th>Total</th>
+					<th>Actions</th>
 				</tr>
-			{/each}
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+				{#each items as item, index}
+					<tr>
+						<td class="capitalize text-center">{item.description}</td>
+						<td class="text-center">{item.personnel}</td>
+						<td class="text-end"
+							>₦{formatCurrency(item.amount.toFixed(2))}</td
+						>
+						<td class="text-end"
+							>₦{formatCurrency((item.personnel * item.amount).toFixed(2))}</td
+						>
+						<td class="mx-auto text-center">
+							<button onclick={() => removeItem(index)} class="text-red-500 font-semibold px-1"
+								><i class="bi bi-trash pe-2"></i>Remove
+							</button>
+						</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
 
 	<div class="mt-5 text-right">
 		<h2 class="text-2xl font-bold">Total: ₦{formatCurrency(total.toFixed(2))}</h2>
@@ -242,5 +245,9 @@
 </section>
 
 <style>
-	
+	th, td {
+		border: 1px solid #ddd;
+		padding: 10px;
+		align-items: center;
+	}
 </style>
