@@ -7,12 +7,11 @@
 <Bg Bg="techStack8.jpg">
 	<h1 class="text-center p-4 text-success-800 text-3xl">About Me</h1>
 
-	<div class="grid lg:grid-cols-2 p-5">
-		<div class="card bg-transparent shadow-2xl">
+	<div class="grid lg:grid-cols-2 md:p-5">
+		<div class="card card-compact bg-transparent shadow-2xl">
 			<div class="card-body">
 				<p
-					class="text-wrap mx-auto fw-semibold fs-5 text-start float-start"
-					style="max-width: 600px;"
+					class="font-semibold text-start md:text-lg"
 				>
 					I am a versatile fullstack software engineer specializing in modern frameworks like
 					SvelteKit for building scalable, responsive, and SEO-optimized web applications. I have
@@ -23,9 +22,9 @@
 				</p>
 			</div>
 		</div>
-		<div class="card bg-transparent shadow-2xl">
+		<div class="card card-compact bg-transparent shadow-2xl">
 			<div class="card-body">
-				<p class="text-wrap mx-auto fw-medium fs-5 text-end float-end" style="max-width: 600px;">
+				<p class="text-end font-medium md:text-lg">
 					With a keen eye for responsive design using frameworks like Bootstrap and TailwindCSS, I
 					ensure that applications deliver an optimal user experience across devices while
 					maintaining strong search engine visibility. I am currently expanding my backend knowledge
@@ -36,7 +35,7 @@
 	</div>
 
 	<h2 class="p-3 py-5 text-primary-900 text-2xl text-center">What I do</h2>
-	<div class="grid xl:grid-cols-5 lg:grid-cols-4 sm:grid-cols-3 grid-cols-2">
+	<div class="grid xl:grid-cols-5 lg:grid-cols-4 sm:grid-cols-3">
 		<div class="card card-compact glass bg-primary-50">
 			<div class="card-body">
 				<div class="card-title">Frontend Development:</div>
@@ -72,7 +71,7 @@
 
 	<div class="container text-center xl:p-5">
 		<h4 class="p-4 text-2xl text-success-900">Certificates:</h4>
-		<div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mx-auto">
+		<div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-auto">
 			<Certificates
 				Certificates={[
 					{
