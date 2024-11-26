@@ -5,7 +5,7 @@
 {#if Images}
 	{#each Images as img}
 		<p>
-			{img.head} <img src={img.src} alt={img.alt} width="40" height="40" loading="lazy" />
+			{img.head} <img src={img.src} alt={img.alt} class="mx-auto" width="40" height="40" loading="lazy" />
 		</p>
 	{/each}
 {/if}

@@ -1,5 +1,4 @@
 <script>
-	import '$lib/input.css';
 	import jsPDF from 'jspdf';
 	import 'jspdf-autotable'; // Add autotable for table support
 	import { success, warning, failure } from '$lib/toast-theme.js';

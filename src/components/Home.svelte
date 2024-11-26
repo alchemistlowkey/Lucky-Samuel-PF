@@ -44,40 +44,31 @@
 				]}
 			/>
 		</div>
-		<div class="row mx-0 mt-5">
+		<div class="mx-0 mt-5">
 			<!-- <h4>Certificates:</h4> -->
-			<Certificates
-				Certificates={[
-					{
-						src: '/images/ALX-cert.png',
-						alt: 'ALX Certificate'
-					},
-					{
-						src: '/images/cert.png',
-						alt: 'LinkedIn Certificate'
-					},
-					{
-						src: '/images/cert1.png',
-						alt: 'LinkedIn Certificate'
-					},
-					{
-						src: '/images/cert2.png',
-						alt: 'LinkedIn Certificate'
-					},
-					{
-						src: '/images/cert3.png',
-						alt: 'LinkedIn Certificate'
-					},
-					{
-						src: '/images/English1.png',
-						alt: 'English Certificate'
-					},
-					{
-						src: '/images/English2.png',
-						alt: 'English Certificate'
-					}
-				]}
-			/>
+			<div class="grid grid-cols-2">
+				<Certificates
+					Certificates={[
+						{
+							src: '/images/cert.png',
+							alt: 'Career Essentials in Software Development'
+						},
+
+						{
+							src: '/images/English2.png',
+							alt: 'English for IT Professionals 2'
+						},
+						{
+							src: '/images/ALX-cert.png',
+							alt: 'ALX Certificate in Software Engineering'
+						},
+						{
+							src: '/images/gig.png',
+							alt: 'ALX Ventures Gig-at-a-start-up Certificate'
+						}
+					]}
+				/>
+			</div>
 		</div>
 	</div>
 </section>
